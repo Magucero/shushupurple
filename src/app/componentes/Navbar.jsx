@@ -11,13 +11,13 @@ export default function Navbar() {
 
       {/* Nav */}
       <nav className="hidden md:flex items-center space-x-10 font-label tracking-tighter uppercase">
-        <Link href="#" className="text-[#BD00FF] border-b-2 border-[#BD00FF] pb-1">
-          CATALOG
+        <Link href="/" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
+          HOME
         </Link>
-        <Link href="#" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300">
-          CATEGORIES
+        <Link href="/catalogo" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
+          CATALOGO
         </Link>
-        <Link href="#" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300">
+        <Link href="#" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
           NEW_DROPS
         </Link>
       </nav>
