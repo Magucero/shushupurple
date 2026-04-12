@@ -6,7 +6,7 @@ export default function Navbar() {
 
       {/* Logo */}
       <div className="text-2xl font-black tracking-widest text-[#BD00FF] font-headline uppercase">
-        SHUSHU PURPLE
+        MONOLITH PURPLE
       </div>
 
       {/* Nav */}
