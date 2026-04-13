@@ -6,7 +6,7 @@ export default function Navbar() {
 
       {/* Logo */}
       <div className="text-2xl font-black tracking-widest text-[#BD00FF] font-headline uppercase">
-        MONOLITH PURPLE
+        MONOLITH_PURPLE
       </div>
 
       {/* Nav */}
@@ -17,7 +17,7 @@ export default function Navbar() {
         <Link href="/catalogo" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
           CATALOGO
         </Link>
-        <Link href="#" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
+        <Link href="/newdrops" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
           NEW_DROPS
         </Link>
       </nav>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-export default function Catalogo() {
+
+export default function Peripherical() {
   return (
     <>
         <section className="flex-1 p-8">
@@ -9,7 +10,7 @@ export default function Catalogo() {
             <div>
               <span className="text-[10px] tracking-[0.4em] text-[var(--secondary)] font-bold uppercase mb-2 block">DISCOVER</span>
               <h1 className="text-5xl md:text-7xl font-headline font-black tracking-tighter uppercase leading-none">
-                Catalog <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)]">01A</span>
+                Perifericos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)]">02B</span>
               </h1>
             </div>
             <div className="flex items-center gap-8 border-b border-[var(--outline-variant)]/30 pb-2 w-full md:w-auto">
