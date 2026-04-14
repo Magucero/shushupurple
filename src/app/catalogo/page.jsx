@@ -26,6 +26,7 @@ export default function Catalogo() {
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1 */}
+            <Link href="catalogo/1">
             <div className="group relative bg-[var(--surface-container-high)] transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 border border-[var(--primary)]/0 group-hover:border-[var(--primary)]/40 transition-colors pointer-events-none"></div>
               <div className="aspect-[4/5] relative overflow-hidden bg-[var(--surface-container)]">
@@ -51,8 +52,10 @@ export default function Catalogo() {
                 </div>
               </div>
             </div>
+            </Link>
 
             {/* Card 2 */}
+            <Link href="catalogo/2">
             <div className="group relative bg-[var(--surface-container-high)] transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 border border-[var(--secondary)]/0 group-hover:border-[var(--secondary)]/40 transition-colors pointer-events-none"></div>
               <div className="aspect-[4/5] relative overflow-hidden bg-[var(--surface-container)]">
@@ -78,8 +81,10 @@ export default function Catalogo() {
                 </div>
               </div>
             </div>
+            </Link>
 
             {/* Card 3 */}
+            <Link href="catalogo/3">
             <div className="group relative bg-[var(--surface-container-high)] transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 border border-[var(--primary)]/0 group-hover:border-[var(--primary)]/40 transition-colors pointer-events-none"></div>
               <div className="aspect-[4/5] relative overflow-hidden bg-[var(--surface-container)]">
@@ -102,8 +107,9 @@ export default function Catalogo() {
                 </div>
               </div>
             </div>
-
+            </Link>
             {/* Card 4 */}
+            <Link href="catalogo/4">
             <div className="group relative bg-[var(--surface-container-high)] transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 border border-[var(--primary)]/0 group-hover:border-[var(--primary)]/40 transition-colors pointer-events-none"></div>
               <div className="aspect-[4/5] relative overflow-hidden bg-[var(--surface-container)]">
@@ -126,8 +132,10 @@ export default function Catalogo() {
                 </div>
               </div>
             </div>
+            </Link>
 
             {/* Card 5 */}
+            <Link href="catalogo/5">
             <div className="group relative bg-[var(--surface-container-high)] transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 border border-[var(--secondary)]/0 group-hover:border-[var(--secondary)]/40 transition-colors pointer-events-none"></div>
               <div className="aspect-[4/5] relative overflow-hidden bg-[var(--surface-container)]">
@@ -153,8 +161,10 @@ export default function Catalogo() {
                 </div>
               </div>
             </div>
+            </Link>
 
             {/* Card 6 */}
+            <Link href="catalogo/6">
             <div className="group relative bg-[var(--surface-container-high)] transition-all duration-500 hover:-translate-y-2">
               <div className="absolute inset-0 border border-[var(--primary)]/0 group-hover:border-[var(--primary)]/40 transition-colors pointer-events-none"></div>
               <div className="aspect-[4/5] relative overflow-hidden bg-[var(--surface-container)]">
@@ -177,6 +187,7 @@ export default function Catalogo() {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </section>
     </>
