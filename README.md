@@ -52,6 +52,6 @@ Para optimizar el código y la experiencia de usuario, se definieron componentes
 * **Neira, Leonardo**
 * **Quiroga, Matias**
 * **Pereyra, Thomas**
-=======
+
 
 
