@@ -15,6 +15,7 @@ La navegación principal se compone de:
 * **New Drops**: Próximos lanzamientos.
 * **Perfil**: Gestión de cuenta.
 
+
 ### 2. Rutas Anidadas
 Dentro de la sección de **Catálogo**, se implementaron rutas que utilizan un **Layout personalizado**:
 * `apparel/` (Indumentaria)
