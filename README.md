@@ -1,62 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🟣 Monolith Purple
+> **Gaming Store & Hardware - Cyberpunk Aesthetic**
 
-## Getting Started
+## 📝 Descripción del Proyecto
+Monolith Purple es una tienda de componentes y artículos relacionados con el gaming, definida por una estética visual inspirada en el género **Cyberpunk**. El proyecto está diseñado para ofrecer una experiencia de usuario inmersiva y funcional.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🗺️ Arquitectura de Rutas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1. Rutas Base
+La navegación principal se compone de:
+* **Home**: Inicio de la aplicación.
+* **Catálogo**: Exploración general de productos.
+* **New Drops**: Próximos lanzamientos.
+* **Perfil**: Gestión de cuenta.
 
 
+### 2. Rutas Anidadas
+Dentro de la sección de **Catálogo**, se implementaron rutas que utilizan un **Layout personalizado**:
+* `apparel/` (Indumentaria)
+* `figuras/` (Coleccionables)
+* `peripherical/` (Periféricos)
 
-Monolith purple es una tienda de componentes y articulos relacionados con el gaming con una estetica cyberpunk
+### 3. Rutas Dinámicas
+* **Detalle de Producto**: Se encuentra vinculada al catálogo. 
+* *Nota:* Actualmente funciona con una lista estática, pero está preparada para la integración con una **API** de datos externa.
 
-objetivos 1_ 3 rutas bases:
-Home,catalogo,new drops y perfil se puede seguir ampliando
-rutas anidada:
-apparel,figuras y peripherical las cuales tambien usan un layout personalizado que esta en la ruta catalogo 
- Ruta dinamica, 
-tambien se encuentra en catalogo por el momento tiene una lista pero se cambiaria por un llamado a un api que nos proporcione datos
+---
 
-barra de navegacion y pie de pagina se encuentran en componentes.
+## ⚙️ Componentes Globales
+Para optimizar el código y la experiencia de usuario, se definieron componentes reutilizables alojados en la carpeta de componentes:
+* **Barra de Navegación (Navbar)**
+* **Pie de Página (Footer)**
 
-explicaion de las rutas 
-Home es el inicio donde podes ver los prodductos y logearte para mas beneficios 
-Catalogo: se encuentran los productos y donde podes acceder a un apartado de categorias que por el momento no cambia 
-tambien podes acceder al detalle del producto para adquirirlo
-new drops vas a poder ver todo lo nuevo que esta por venir y si te suscribis vas a tener acceso anticipado 
-y el perfil aparece el historial de compra y los productos adquiridos.
+---
 
-Integrantes:
-Perez Lucas,
-Neira Leonardo,
-Quiroga Matias,
-Pereyra Thomas.
+
+## 🔍 Detalle de Secciones
+
+| Sección | Descripción |
+| :--- | :--- |
+| **Home** | Inicio donde se visualizan productos destacados y acceso al Login para obtener beneficios. |
+| **Catálogo** | Apartado central para ver productos por categorías y acceder al detalle individual de cada uno para la compra. |
+| **New Drops** | Sección dedicada a futuros lanzamientos. Incluye un sistema de suscripción para obtener **acceso anticipado**. |
+| **Perfil** | Espacio del usuario donde se visualiza el historial de compras y los productos adquiridos. |
+
+---
+
+## 👥 Integrantes
+* **Perez, Lucas**
+* **Neira, Leonardo**
+* **Quiroga, Matias**
+* **Pereyra, Thomas**
+
+
+
