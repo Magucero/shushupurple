@@ -1,4 +1,5 @@
 import React from 'react'
+import AddToCar from './AddToCar'
 
 export default function  CardHome({img,alt,nameP,price,text1,text2}){
   return (
@@ -20,7 +21,14 @@ export default function  CardHome({img,alt,nameP,price,text1,text2}){
               <h4 className="font-headline font-bold text-lg uppercase tracking-tight">{nameP}</h4>
               <p className="text-[var(--on-surface-variant)] text-xs mt-1 uppercase tracking-widest">{text2}</p>
 
-              <button className="w-full mt-6 border border-[var(--outline-variant)] py-3 font-label text-sm uppercase tracking-[0.2em] hover:bg-[var(--on-surface)] hover:text-[var(--surface)] transition-colors">ADD TO_CART</button>
+              <AddToCar
+                nombre={nameP}
+                img={img}
+                precio={price}
+                style={"w-full mt-6 border border-[var(--outline-variant)] py-3 font-label text-sm uppercase tracking-[0.2em] hover:bg-[var(--on-surface)] hover:text-[var(--surface)] transition-colors"}
+                nameBoton = {"Add"}
+              
+              />
             </div>
         </div>
   )

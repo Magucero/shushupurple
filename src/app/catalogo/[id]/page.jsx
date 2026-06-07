@@ -1,3 +1,4 @@
+import AddToCar from "@/app/componentes/AddToCar";
 import Link from "next/link";
 
 
@@ -73,9 +74,12 @@ export default async function ProductDetalle({ params }) {
           <p className="mb-4 text-[var(--on-surface-variant)]">{product.descripcion}</p>
           <p className="text-3xl font-bold mb-6 text-[var(--primary)]">${product.precio.toFixed(2)}</p>
           
-          <button className="w-full bg-[var(--primary)] text-[var(--on-primary)] py-3 rounded-lg font-bold hover:bg-[var(--primary-dim)] transition-colors">
-            Comprar ahora
-          </button>
+          <AddToCar
+          nombre={product.nombre}
+          img={product.img}
+          precio={product.precio}
+          style={"w-full bg-[var(--primary)] text-[var(--on-primary)] py-3 rounded-lg font-bold hover:bg-[var(--primary-dim)] transition-colors"}
+          nameBoton = {"Buy now"}/>
         </div>
       </div>
     </div>

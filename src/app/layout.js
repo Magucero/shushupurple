@@ -2,7 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
-import { CardHome } from "./componentes/CardHome";
+import FormClient from "./componentes/FormClient";
+import LoginForm from "./componentes/LoginForm";
+
 
 
 const geistSans = Geist({
@@ -28,11 +30,17 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         
+        
         <Navbar />
+        
+    
+
         
 
         {children}
+        
         <Footer />
+
         
       </body>
     </html>

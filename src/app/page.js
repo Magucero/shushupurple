@@ -134,7 +134,7 @@ export default function Home() {
           img={"https://lh3.googleusercontent.com/aida-public/AB6AXuAiF-Eb0YUJykbk0Vzjuz5WbYyS7VDlgUlf_Cp9IhM6zMA6qm1HiWipq5uyp71SGhSXEpGYDkICl2guy221pkI3DTwsvG1Lhm7QWUATjE0QycqSnHObPq9TRR6Eg23VqTNaElgdfU-yXaEWwgxJO_YvSTO5TuzkfCfZXCBnzIQCpLg3HZZ9PPDk9dkAPixFtB98ofjJCqjbhbzmqz5cuKdkLibmFV1XRtpd_ud6QAvG7_aUCGJ0ttOUbnsXKmsveE-W7oaoozUzvCo"}
           alt={"Figure Product"}
           nameP={"KAIZEN_SERIES: VALKYRIE"}
-          price={"249.00"}
+          price={249.00}
           text1={"LIMITED_DROP"}
           text2={"1/7 SCALE STATUE"}
           />
@@ -143,7 +143,7 @@ export default function Home() {
           img={"https://lh3.googleusercontent.com/aida-public/AB6AXuBXKd0ncOteP-fmSBuqARnx6MRfzEPyxcQShATIloMpfmTgv7ZUDOmlTL7iNs3qHdkfHtTth08gZqAORMnU4T8irNm-vn7skdWV8nH2nfx7lH3CReV4Ggkb1wLWlSnfbbnWWu9BIN8P4EgY4fxMZjXXyO4QivTBrGs-RGp4h5Wee0KAaa4coQgn6y6Ao1QFGDPOocpkT2hmhr8zZVmMRXvzSnN5aat525T85YEmpcTnbtMnavtCTg8Mu4SE9HQDayZMJ3MXw-RtyQY"}
           alt={"Figure Product"}
           nameP={"CYBER_DRUID V.2"}
-          price={"$185.00"}
+          price={185.00}
           text1={"PRE_ORDER"}
           text2={"COLLECTOR EDITION"}
           />
@@ -153,7 +153,7 @@ export default function Home() {
           img={"https://lh3.googleusercontent.com/aida-public/AB6AXuDsms6lNRNcjXNPzn4Enb1EP5orfrIeL-6WNAfMjBlGJ8m2rdtkN__8kgbN9Aos2jTsQUzb_H2o2vWO1BGc0nOOOyZUqM70kGiAIYZSGRpCeN4DW4a7g8G7SIlDN75DrwB9mzmsDIhLOMxBbm1LGdOTGoVnWmfpcBldxNmBflAhgUzqiKpPbug01RsKNpprvG_msIe4rLjZl6ms05k95o-HXJgdNVydh6gKLfr2xccNto2XicWftkFIzRZExNVulaCcpK4P9C5meGk"}
           alt={"Figure Product"}
           nameP={"VOID_SOUND PRO_7"}
-          price={"$320.00"}
+          price={320.00}
           text1={"RESTOCKED"}
           text2={"WIRELESS HI-RES"}
           />
@@ -163,7 +163,7 @@ export default function Home() {
           img={"https://lh3.googleusercontent.com/aida-public/AB6AXuDWlU46J8D165D7qcUXUJUNYDq2mURsruGldBq31IRiE1QCkHFOQGm0XoqDKIqI2HZopL-9fHTXUzzh8v-xffmCLftH-EgBCAdON7vv8i9NtRq4KWlHRSQkxYC5gTEytJqIvzidpYXZO_wAm6ocOjyT3dOdAser0bqM1b9pISYsEMNZ10vx8f2-d67TKi8-U_2v4UJPOoMqO_1P5cCj3eZymYfyIQVFBLzodTEvL5PeFZEtcD0eT54Xl87Fh2UWDtSPlBmATezzFiM"}
           alt={"Figure Product"}
           nameP={"PHANTOM_GLIDE X"}
-          price={"$129.00"}
+          price={129.00}
           text1={"NEW_DROP"}
           text2={"8000HZ POLLING RATE"}
           />

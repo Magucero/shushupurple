@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import CardDrops from "../componentes/CardDrops";
 
 export default function Newdrops() {
   return (
@@ -151,73 +152,30 @@ export default function Newdrops() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-1px bg-[var(--outline-variant)]/20">
               {/* Drop Card 01 */}
-              <div className="bg-[var(--surface)] p-8 group hover:bg-[var(--surface-container)] transition-colors duration-500">
-                <div className="aspect-square bg-[var(--surface-container-high)] mb-8 overflow-hidden">
-                  <img
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                    alt="abstract tech clothing jacket with reflective strips and futuristic buckles on a dark background"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJMdtp_hiw13fPxfQskW4fNwbaR_jUbGWheUhuXl1REkeMH6PG0Orxaklrjmd-I-8y5CPeXUgPPuhERG6wYmQggeoysl4u_Nt4ijODRWvIqjR7AeuudDjKdZCTlk6uysynRhwnsbEOg3jzHZhwCJNMul-9t-YUTtWBXXiqXh1D0CMRJE9QxA-XXySPbUEzFTC4wWAiGlN_9TgoT04Oza1DbAity_1zeJHDknnzhkdWnX0qAtvc_w2V-FvfDWAce6f7ZCSuQAPGcvc"
-                  />
-                </div>
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold font-headline uppercase tracking-tight">
-                    KINETIC JACKET
-                  </h3>
-                  <span className="text-[var(--primary)] font-headline text-sm font-bold">#001</span>
-                </div>
-                <p className="text-[var(--on-surface-variant)] text-sm mb-8 leading-relaxed">
-                  Integrated thermal shielding with modular utility pouches for high-risk zones.
-                </p>
-                <button className="w-full border border-[var(--outline-variant)] py-4 font-headline uppercase tracking-widest text-xs hover:bg-[var(--secondary)] hover:text-[var(--on-secondary)] hover:border-[var(--secondary)] transition-all active:scale-95">
-                  QUEUE FOR NOTIFICATION
-                </button>
-              </div>
-
+              
+              <CardDrops
+              img = {"https://lh3.googleusercontent.com/aida-public/AB6AXuCJMdtp_hiw13fPxfQskW4fNwbaR_jUbGWheUhuXl1REkeMH6PG0Orxaklrjmd-I-8y5CPeXUgPPuhERG6wYmQggeoysl4u_Nt4ijODRWvIqjR7AeuudDjKdZCTlk6uysynRhwnsbEOg3jzHZhwCJNMul-9t-YUTtWBXXiqXh1D0CMRJE9QxA-XXySPbUEzFTC4wWAiGlN_9TgoT04Oza1DbAity_1zeJHDknnzhkdWnX0qAtvc_w2V-FvfDWAce6f7ZCSuQAPGcvc"}
+              name = {"KINETIC JACKET"}
+              orden = {"#001"}
+              descrption = {"Integrated thermal shielding with modular utility pouches for high-risk zones."}
+              />
+              
               {/* Drop Card 02 */}
-              <div className="bg-[var(--surface)] p-8 group hover:bg-[var(--surface-container)] transition-colors duration-500">
-                <div className="aspect-square bg-[var(--surface-container-high)] mb-8 overflow-hidden">
-                  <img
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                    alt="futuristic backpack with rigid outer shell and internal purple LED illumination"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQd0wkjgkEOwDa8wGOCgpoHVIrAqk7Fg4bTmHlQU7l5qLWGvLG7e7rzKRB2VhV7lFbODU6EbLw6_zzdRKkplrrMI9R1NtRL5v-P8894dtjqQn0_ur1pOdJtkjt0t5Fs6v_YWbQVDeHjkkD-7Od1kdIp-a_tqf_Uq2n14vlKw2uxCpfm-vBMzxZ-vMs5O52cAPLVbRpuaMKwkNASRGipWZXaPgV6Fv8XJZX5gE4KAfyX0vKLZZhyfTioLhhhry6PF4x0wSjBSDnQ_k"
-                  />
-                </div>
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold font-headline uppercase tracking-tight">
-                    VOID PACK_04
-                  </h3>
-                  <span className="text-[var(--primary)] font-headline text-sm font-bold">#002</span>
-                </div>
-                <p className="text-[var(--on-surface-variant)] text-sm mb-8 leading-relaxed">
-                  Stealth-tech surface fabric. Waterproof rating beyond industry standards.
-                </p>
-                <button className="w-full border border-[var(--outline-variant)] py-4 font-headline uppercase tracking-widest text-xs hover:bg-[var(--secondary)] hover:text-[var(--on-secondary)] hover:border-[var(--secondary)] transition-all active:scale-95">
-                  QUEUE FOR NOTIFICATION
-                </button>
-              </div>
-
+              <CardDrops
+              img = {"https://lh3.googleusercontent.com/aida-public/AB6AXuBQd0wkjgkEOwDa8wGOCgpoHVIrAqk7Fg4bTmHlQU7l5qLWGvLG7e7rzKRB2VhV7lFbODU6EbLw6_zzdRKkplrrMI9R1NtRL5v-P8894dtjqQn0_ur1pOdJtkjt0t5Fs6v_YWbQVDeHjkkD-7Od1kdIp-a_tqf_Uq2n14vlKw2uxCpfm-vBMzxZ-vMs5O52cAPLVbRpuaMKwkNASRGipWZXaPgV6Fv8XJZX5gE4KAfyX0vKLZZhyfTioLhhhry6PF4x0wSjBSDnQ_k"}
+              name = {"VOID PACK_04"}
+              orden = {"#002"}
+              descrption = {"Stealth-tech surface fabric. Waterproof rating beyond industry standards."}
+              />
+              
               {/* Drop Card 03 */}
-              <div className="bg-[var(--surface)] p-8 group hover:bg-[var(--surface-container)] transition-colors duration-500">
-                <div className="aspect-square bg-[var(--surface-container-high)] mb-8 overflow-hidden">
-                  <img
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                    alt="cyberpunk glasses with orange tinted lenses and digital HUD display projections on the surface"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKFa43HPrkyDFIjmRXnPqNoL2ljkbFL3P-uoZwzl2Cei2gxkgjsQA0ABcfJvSoLIT2KmKtAvda6VDP8YVgCKQVt6_HBlxMphTYJfJXNzTmeS9RM9w5oJPFZvpEXKY_HDNvKZYtWrDs6r0BaWq-3GrVhITMrXT_KS3nZNKd9jmeHa3WNnf-icTwjK-DLWJQXJ9U40L8OmOabXkGpi5ktPLruCVooTgcdfoDq4XhqKNC5jMbNhhfMtZXohP6U9xeBLcZjm4CS9W0qd0"
-                  />
-                </div>
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-2xl font-bold font-headline uppercase tracking-tight">
-                    OPTIC SCAN_V2
-                  </h3>
-                  <span className="text-[var(--primary)] font-headline text-sm font-bold">#003</span>
-                </div>
-                <p className="text-[var(--on-surface-variant)] text-sm mb-8 leading-relaxed">
-                  Real-time AR overlay with encrypted messaging capabilities.
-                </p>
-                <button className="w-full border border-[var(--outline-variant)] py-4 font-headline uppercase tracking-widest text-xs hover:bg-[var(--secondary)] hover:text-[var(--on-secondary)] hover:border-[var(--secondary)] transition-all active:scale-95">
-                  QUEUE FOR NOTIFICATION
-                </button>
-              </div>
+              <CardDrops
+              img = {"https://lh3.googleusercontent.com/aida-public/AB6AXuCKFa43HPrkyDFIjmRXnPqNoL2ljkbFL3P-uoZwzl2Cei2gxkgjsQA0ABcfJvSoLIT2KmKtAvda6VDP8YVgCKQVt6_HBlxMphTYJfJXNzTmeS9RM9w5oJPFZvpEXKY_HDNvKZYtWrDs6r0BaWq-3GrVhITMrXT_KS3nZNKd9jmeHa3WNnf-icTwjK-DLWJQXJ9U40L8OmOabXkGpi5ktPLruCVooTgcdfoDq4XhqKNC5jMbNhhfMtZXohP6U9xeBLcZjm4CS9W0qd0"}
+              name = {"OPTIC SCAN_V2"}
+              orden = {"#003"}
+              descrption = {"Real-time AR overlay with encrypted messaging capabilities."}
+              />
+              
             </div>
           </div>
         </section>
