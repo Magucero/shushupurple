@@ -26,7 +26,7 @@ export default function AddToCar({
       JSON.stringify(carrito)
     );
 
-    alert("Producto agregado");
+  
   };
 
   return (

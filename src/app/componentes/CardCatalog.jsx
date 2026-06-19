@@ -23,7 +23,7 @@ export default function  CardCatalog({img,alt,nameP,price,text1,text2,enlace}){
                 </div>
                 <p className="text-[var(--on-surface-variant)] text-sm line-clamp-2 font-light">{text2}</p>
                 <div className="flex justify-between items-center pt-4">
-                  <span className="text-2xl font-headline font-black text-[var(--primary)]">${price}.00</span>
+                  <span className="text-2xl font-headline font-black text-[var(--primary)]">${price}</span>
                   <AddToCar
                     nombre={nameP}
                     img={img}
