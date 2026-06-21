@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Carritou from "./Carritoup";
+
 
 export default function Navbar() {
   return (
@@ -20,6 +22,9 @@ export default function Navbar() {
         <Link href="/newdrops" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
           NEW_DROPS
         </Link>
+        <Link href="/juegos" className="text-slate-400 font-medium hover:text-[#BD00FF] transition-colors duration-300 focus:border-b-2 border-[#BD00FF] focus:text-[#BD00FF]">
+          Juegos
+        </Link>
       </nav>
 
       {/* Icons */}
@@ -29,10 +34,7 @@ export default function Navbar() {
         </button>
 
         <button className="hover:text-white transition-colors relative">
-          <span className="material-symbols-outlined">car</span>
-          <span className="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] w-4 h-4 flex items-center justify-center font-bold">
-            3
-          </span>
+          <Carritou/>
         </button>
         <Link href="/perfil">
         <div className="w-10 h-10 bg-zinc-800 border border-zinc-700 flex items-center justify-center">

@@ -1,4 +1,7 @@
 import Image from "next/image";
+import CardHome from "./componentes/CardHome";
+
+
 
 export default function Home() {
   return (
@@ -127,97 +130,45 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Product Card 1 */}
-          <div className="bg-[var(--surface-container-high)] relative group">
-            <div className="aspect-[3/4] overflow-hidden">
-              <img
-                alt="Figure Product"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiF-Eb0YUJykbk0Vzjuz5WbYyS7VDlgUlf_Cp9IhM6zMA6qm1HiWipq5uyp71SGhSXEpGYDkICl2guy221pkI3DTwsvG1Lhm7QWUATjE0QycqSnHObPq9TRR6Eg23VqTNaElgdfU-yXaEWwgxJO_YvSTO5TuzkfCfZXCBnzIQCpLg3HZZ9PPDk9dkAPixFtB98ofjJCqjbhbzmqz5cuKdkLibmFV1XRtpd_ud6QAvG7_aUCGJ0ttOUbnsXKmsveE-W7oaoozUzvCo"
-              />
-            </div>
-
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-2">
-                <span className="bg-[var(--secondary)] px-2 py-1 text-[10px] font-bold tracking-widest text-[var(--on-secondary)]">LIMITED_DROP</span>
-                <span className="text-[var(--primary)] font-headline font-black">$249.00</span>
-              </div>
-
-              <h4 className="font-headline font-bold text-lg uppercase tracking-tight">KAIZEN_SERIES: VALKYRIE</h4>
-              <p className="text-[var(--on-surface-variant)] text-xs mt-1 uppercase tracking-widest">1/7 SCALE STATUE</p>
-
-              <button className="w-full mt-6 border border-[var(--outline-variant)] py-3 font-label text-sm uppercase tracking-[0.2em] hover:bg-[var(--on-surface)] hover:text-[var(--surface)] transition-colors">ADD TO_CART</button>
-            </div>
-          </div>
-
+          <CardHome
+          img={"https://lh3.googleusercontent.com/aida-public/AB6AXuAiF-Eb0YUJykbk0Vzjuz5WbYyS7VDlgUlf_Cp9IhM6zMA6qm1HiWipq5uyp71SGhSXEpGYDkICl2guy221pkI3DTwsvG1Lhm7QWUATjE0QycqSnHObPq9TRR6Eg23VqTNaElgdfU-yXaEWwgxJO_YvSTO5TuzkfCfZXCBnzIQCpLg3HZZ9PPDk9dkAPixFtB98ofjJCqjbhbzmqz5cuKdkLibmFV1XRtpd_ud6QAvG7_aUCGJ0ttOUbnsXKmsveE-W7oaoozUzvCo"}
+          alt={"Figure Product"}
+          nameP={"KAIZEN_SERIES: VALKYRIE"}
+          price={249.00}
+          text1={"LIMITED_DROP"}
+          text2={"1/7 SCALE STATUE"}
+          />
           {/* Product Card 2 */}
-          <div className="bg-[var(--surface-container-high)] relative group">
-            <div className="aspect-[3/4] overflow-hidden">
-              <img
-                alt="Figure Product"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXKd0ncOteP-fmSBuqARnx6MRfzEPyxcQShATIloMpfmTgv7ZUDOmlTL7iNs3qHdkfHtTth08gZqAORMnU4T8irNm-vn7skdWV8nH2nfx7lH3CReV4Ggkb1wLWlSnfbbnWWu9BIN8P4EgY4fxMZjXXyO4QivTBrGs-RGp4h5Wee0KAaa4coQgn6y6Ao1QFGDPOocpkT2hmhr8zZVmMRXvzSnN5aat525T85YEmpcTnbtMnavtCTg8Mu4SE9HQDayZMJ3MXw-RtyQY"
-              />
-            </div>
+          <CardHome
+          img={"https://lh3.googleusercontent.com/aida-public/AB6AXuBXKd0ncOteP-fmSBuqARnx6MRfzEPyxcQShATIloMpfmTgv7ZUDOmlTL7iNs3qHdkfHtTth08gZqAORMnU4T8irNm-vn7skdWV8nH2nfx7lH3CReV4Ggkb1wLWlSnfbbnWWu9BIN8P4EgY4fxMZjXXyO4QivTBrGs-RGp4h5Wee0KAaa4coQgn6y6Ao1QFGDPOocpkT2hmhr8zZVmMRXvzSnN5aat525T85YEmpcTnbtMnavtCTg8Mu4SE9HQDayZMJ3MXw-RtyQY"}
+          alt={"Figure Product"}
+          nameP={"CYBER_DRUID V.2"}
+          price={185.00}
+          text1={"PRE_ORDER"}
+          text2={"COLLECTOR EDITION"}
+          />
+                    {/* Product Card 3 */}
 
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-2">
-                <span className="bg-[var(--surface-variant)] px-2 py-1 text-[10px] font-bold tracking-widest text-[var(--primary)]">PRE_ORDER</span>
-                <span className="text-[var(--primary)] font-headline font-black">$185.00</span>
-              </div>
+          <CardHome
+          img={"https://lh3.googleusercontent.com/aida-public/AB6AXuDsms6lNRNcjXNPzn4Enb1EP5orfrIeL-6WNAfMjBlGJ8m2rdtkN__8kgbN9Aos2jTsQUzb_H2o2vWO1BGc0nOOOyZUqM70kGiAIYZSGRpCeN4DW4a7g8G7SIlDN75DrwB9mzmsDIhLOMxBbm1LGdOTGoVnWmfpcBldxNmBflAhgUzqiKpPbug01RsKNpprvG_msIe4rLjZl6ms05k95o-HXJgdNVydh6gKLfr2xccNto2XicWftkFIzRZExNVulaCcpK4P9C5meGk"}
+          alt={"Figure Product"}
+          nameP={"VOID_SOUND PRO_7"}
+          price={320.00}
+          text1={"RESTOCKED"}
+          text2={"WIRELESS HI-RES"}
+          />
+                    {/* Product Card 4 */}
 
-              <h4 className="font-headline font-bold text-lg uppercase tracking-tight">CYBER_DRUID V.2</h4>
-              <p className="text-[var(--on-surface-variant)] text-xs mt-1 uppercase tracking-widest">COLLECTOR EDITION</p>
-
-              <button className="w-full mt-6 border border-[var(--outline-variant)] py-3 font-label text-sm uppercase tracking-[0.2em] hover:bg-[var(--on-surface)] hover:text-[var(--surface)] transition-colors">RESERVE_UNIT</button>
-            </div>
-          </div>
-
-          {/* Product Card 3 */}
-          <div className="bg-[var(--surface-container-high)] relative group">
-            <div className="aspect-[3/4] overflow-hidden">
-              <img
-                alt="Audio Gear"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsms6lNRNcjXNPzn4Enb1EP5orfrIeL-6WNAfMjBlGJ8m2rdtkN__8kgbN9Aos2jTsQUzb_H2o2vWO1BGc0nOOOyZUqM70kGiAIYZSGRpCeN4DW4a7g8G7SIlDN75DrwB9mzmsDIhLOMxBbm1LGdOTGoVnWmfpcBldxNmBflAhgUzqiKpPbug01RsKNpprvG_msIe4rLjZl6ms05k95o-HXJgdNVydh6gKLfr2xccNto2XicWftkFIzRZExNVulaCcpK4P9C5meGk"
-              />
-            </div>
-
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-2">
-                <span className="bg-[var(--surface-variant)] px-2 py-1 text-[10px] font-bold tracking-widest text-[var(--on-surface)]">RESTOCKED</span>
-                <span className="text-[var(--primary)] font-headline font-black">$320.00</span>
-              </div>
-
-              <h4 className="font-headline font-bold text-lg uppercase tracking-tight">VOID_SOUND PRO_7</h4>
-              <p className="text-[var(--on-surface-variant)] text-xs mt-1 uppercase tracking-widest">WIRELESS HI-RES</p>
-
-              <button className="w-full mt-6 border border-[var(--outline-variant)] py-3 font-label text-sm uppercase tracking-[0.2em] hover:bg-[var(--on-surface)] hover:text-[var(--surface)] transition-colors">ADD TO_CART</button>
-            </div>
-          </div>
-
-          {/* Product Card 4 */}
-          <div className="bg-[var(--surface-container-high)] relative group">
-            <div className="aspect-[3/4] overflow-hidden">
-              <img
-                alt="Mouse Gear"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWlU46J8D165D7qcUXUJUNYDq2mURsruGldBq31IRiE1QCkHFOQGm0XoqDKIqI2HZopL-9fHTXUzzh8v-xffmCLftH-EgBCAdON7vv8i9NtRq4KWlHRSQkxYC5gTEytJqIvzidpYXZO_wAm6ocOjyT3dOdAser0bqM1b9pISYsEMNZ10vx8f2-d67TKi8-U_2v4UJPOoMqO_1P5cCj3eZymYfyIQVFBLzodTEvL5PeFZEtcD0eT54Xl87Fh2UWDtSPlBmATezzFiM"
-              />
-            </div>
-
-            <div className="p-6">
-              <div className="flex justify-between items-start mb-2">
-                <span className="bg-[var(--secondary)] px-2 py-1 text-[10px] font-bold tracking-widest text-[var(--on-secondary)]">NEW_DROP</span>
-                <span className="text-[var(--primary)] font-headline font-black">$129.00</span>
-              </div>
-
-              <h4 className="font-headline font-bold text-lg uppercase tracking-tight">PHANTOM_GLIDE X</h4>
-              <p className="text-[var(--on-surface-variant)] text-xs mt-1 uppercase tracking-widest">8000HZ POLLING RATE</p>
-
-              <button className="w-full mt-6 border border-[var(--outline-variant)] py-3 font-label text-sm uppercase tracking-[0.2em] hover:bg-[var(--on-surface)] hover:text-[var(--surface)] transition-colors">ADD TO_CART</button>
-            </div>
-          </div>
+          <CardHome
+          img={"https://lh3.googleusercontent.com/aida-public/AB6AXuDWlU46J8D165D7qcUXUJUNYDq2mURsruGldBq31IRiE1QCkHFOQGm0XoqDKIqI2HZopL-9fHTXUzzh8v-xffmCLftH-EgBCAdON7vv8i9NtRq4KWlHRSQkxYC5gTEytJqIvzidpYXZO_wAm6ocOjyT3dOdAser0bqM1b9pISYsEMNZ10vx8f2-d67TKi8-U_2v4UJPOoMqO_1P5cCj3eZymYfyIQVFBLzodTEvL5PeFZEtcD0eT54Xl87Fh2UWDtSPlBmATezzFiM"}
+          alt={"Figure Product"}
+          nameP={"PHANTOM_GLIDE X"}
+          price={129.00}
+          text1={"NEW_DROP"}
+          text2={"8000HZ POLLING RATE"}
+          />
         </div>
+        
       </section>
 
       {/* Join Section */}
