@@ -1,24 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCart } from "../componentes/CartContext";
 
 export default function Carrito() {
-  const [carrito, setCarrito] = useState([]);
+  const { cart, removeProduct } = useCart();
 
-  useEffect(() => {
-    const productos = JSON.parse(localStorage.getItem("carrito")) || [];
-    setCarrito(productos);
-  }, []);
-
-  const eliminarProducto = (index) => {
-    const nuevoCarrito = carrito.filter((_, i) => i !== index);
-
-    localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
-    setCarrito(nuevoCarrito);
-  };
-
-  const total = carrito.reduce(
-    (acc, producto) => acc + Number(producto.precio),
+  const total = cart.reduce(
+    (acc, producto) => acc + Number(producto.precio) * producto.quantity,
     0
   );
 
@@ -29,9 +17,9 @@ export default function Carrito() {
       </h1>
 
       <div className="grid gap-6">
-        {carrito.map((producto, index) => (
+        {cart.map((producto) => (
           <div
-            key={index}
+            key={producto.nombre}
             className="bg-[var(--surface-container-high)] border border-[var(--outline)]/20 hover:border-[var(--primary)]/30 transition-all duration-300 p-5 flex items-center justify-between"
           >
             <div className="flex gap-5 items-center">
@@ -42,9 +30,12 @@ export default function Carrito() {
               />
 
               <div>
-                <h2 className="font-bold text-xl">{producto.nombre}</h2>
+                <h2 className="font-bold text-xl">
+                  {producto.nombre}
+                </h2>
+
                 <p className="text-[var(--on-surface-variant)]">
-                  Producto seleccionado
+                  Cantidad: {producto.quantity}
                 </p>
               </div>
             </div>
@@ -55,7 +46,7 @@ export default function Carrito() {
               </span>
 
               <button
-                onClick={() => eliminarProducto(index)}
+                onClick={() => removeProduct(producto.nombre)}
                 className="bg-red-500/20 border border-red-500/30 px-4 py-2 hover:bg-red-500/30 transition-colors"
               >
                 Eliminar

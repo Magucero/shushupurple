@@ -7,7 +7,7 @@ export default function Juegos() {
   const [juegoElegido, setJuegoElegido] = useState(null)
 
   return (
-    <section className="flex-1 p-8 max-w-5xl mx-auto">
+    <section className="flex-1 mt-20 p-8 max-w-5xl mx-auto">
       <div className="mb-10">
         <span className="text-[10px] tracking-[0.4em] text-[var(--secondary)] font-bold uppercase mb-2 block">
           REQUISITOS

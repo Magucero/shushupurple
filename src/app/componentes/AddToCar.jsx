@@ -1,4 +1,6 @@
-"use client"
+"use client";
+
+import { useCart } from "./CartContext";
 
 export default function AddToCar({
   nombre,
@@ -7,26 +9,14 @@ export default function AddToCar({
   style,
   nameBoton,
 }) {
-  const handleClick = () => {
-    const carrito = JSON.parse(
-      localStorage.getItem("carrito")
-    ) || [];
+  const { addProduct } = useCart();
 
-    const producto = {
+  const handleClick = () => {
+    addProduct({
       nombre,
       img,
       precio,
-      
-    };
-
-    carrito.push(producto);
-
-    localStorage.setItem(
-      "carrito",
-      JSON.stringify(carrito)
-    );
-
-  
+    });
   };
 
   return (

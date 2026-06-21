@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { CartProvider } from "./componentes/CartContext";
 import "./globals.css";
 import Navbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
-import FormClient from "./componentes/FormClient";
-import LoginForm from "./componentes/LoginForm";
+
 
 
 
@@ -30,15 +30,10 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         
-        
-        <Navbar />
-        
-    
-
-        
-
+        <CartProvider>        
+        <Navbar />      
         {children}
-        
+        </CartProvider>
         <Footer />
 
         

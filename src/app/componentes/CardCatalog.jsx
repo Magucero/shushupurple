@@ -2,7 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import AddToCar from './AddToCar'
 
+
+
 export default function  CardCatalog({img,alt,nameP,price,text1,text2,enlace}){
+  
   return (
         <Link href={enlace}>
             <div className="group relative bg-[var(--surface-container-high)] transition-all duration-500 hover:-translate-y-2">
@@ -31,6 +34,7 @@ export default function  CardCatalog({img,alt,nameP,price,text1,text2,enlace}){
                     style={"bg-[var(--primary)] text-[var(--on-primary)] p-3 transition-all active:scale-95"}
                     nameBoton = {"Add"}
                 />
+                
                 
 
                 </div>
